@@ -1,13 +1,19 @@
+:root {
+  --background-color: #e67e22; 
+  --blur: 10px;
+}
+
+
 body {
     text-align: center;
     font-family: Lato, sans-serif;
     background-color: #00245e;
-
 }
 
 img {
     width: 100vw;
     height: auto;
+    filter: blur(var(--blur));
 }
 
 a {
@@ -20,7 +26,6 @@ label {
 }
 
 h2 {
-    background-color: #00245e;
     color: white;
     font-size: 3em;
     margin-bottom: 0;
@@ -33,4 +38,8 @@ h2 {
     color: white;
     font-weight: 100;
     font-size: 2em;
+}
+
+.h2-js {
+    color: var(--background-color);
 }
