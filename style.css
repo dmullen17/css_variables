@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    font-family: Lato, sans-serif;
+    background-color: #00245e;
+
+}
+
+img {
+    width: 100vw;
+    height: auto;
+}
+
+a {
+    float: right;
+}
+
+label {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h2 {
+    background-color: #00245e;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+
+}
+
+.labels {
+    padding-bottom: 80px;
+    color: white;
+    font-weight: 100;
+    font-size: 2em;
+}
