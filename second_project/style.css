@@ -1,0 +1,45 @@
+:root {
+    --text-color: #FFFFFF;
+    --gradient-start: .5;
+    --gradient-end: .7;
+    --angle: 180deg;
+    --font-size: 20px;
+}
+
+body {
+    background-image: linear-gradient(var(--angle), rgba(0, 0, 0, var(--gradient-start)), rgba(0,0,0,var(--gradient-end))), url(florentine-pautet-1281045-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--text-color);
+    font-family: cursive;
+    font-size: var(--font-size);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-element {
+    display: flex;
+    margin: 20px;
+}
+
+p {
+    margin: 5px;
+}
+
+input {
+    padding-top: 5px;
+}
+
+input[name='color'] {
+    margin-top: 5px;
+}
