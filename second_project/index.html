@@ -10,11 +10,11 @@
         <div class='inputs'>
             <div class='input-element'>
                 <p>Gradient Start:</p>
-                <input type='range' name='gradient-start' min='0' max='1' value='.5' step='.05' data-suffix=''>
+                <input type='range' name='gradient-alpha-start' min='0' max='1' value='.5' step='.05' data-suffix=''>
             </div>
             <div class='input-element'>
                 <p>Gradient End:</p>
-                <input type='range' name='gradient-end' min='0' max='1' value='.7' step='.05' data-suffix=''>
+                <input type='range' name='gradient-alpha-end' min='0' max='1' value='.7' step='.05' data-suffix=''>
             </div>
             <div class='input-element'>
                 <p>Angle:</p>
@@ -25,8 +25,16 @@
                 <input type='range' name='font-size' min='10' max='70' value='35' step='1' data-suffix='px'>
             </div>
             <div class='input-element'>
-                <p>Color:</p>
+                <p>Text Color:</p>
                 <input type='color' name='text-color' value='#FFFFFF' data-suffix=''>
+            </div>
+            <div class='input-element'>
+                <p>Gradient Start Color:</p>
+                <input type='color' name='gradient-start-color' value='#FFFFFF' data-suffix='' data-type='gradient-color' data-position='start'>
+            </div> 
+            <div class='input-element'>
+                <p>Gradient End Color:</p>
+                <input type='color' name='gradient-end-color' value='#FFFFFF' data-suffix='' data-type='gradient-color' data-position='end'>
             </div> 
         </div>
     </div>

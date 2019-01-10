@@ -1,15 +1,33 @@
 :root {
     --text-color: #FFFFFF;
-    --gradient-start: .5;
-    --gradient-end: .7;
     --angle: 180deg;
-    --font-size: 20px;
+    --font-size: 20px; 
+    --gradient-alpha-start: .1;
+    --gradient-alpha-end: .7;
+    --gradient-red-start: 0;
+    --gradient-blue-start: 0;
+    --gradient-green-start: 0;
+    --gradient-red-end: 0;
+    --gradient-blue-end: 0;
+    --gradient-green-end: 0;
 }
 
 body {
-    background-image: linear-gradient(var(--angle), rgba(0, 0, 0, var(--gradient-start)), rgba(0,0,0,var(--gradient-end))), url(florentine-pautet-1281045-unsplash.jpg);
+    background-image: linear-gradient(var(--angle),
+        rgba(var(--gradient-red-start),
+             var(--gradient-blue-start),
+             var(--gradient-green-start),
+             var(--gradient-alpha-start)),
+        rgba(var(--gradient-red-end),
+             var(--gradient-blue-end),
+             var(--gradient-green-end),
+             var(--gradient-alpha-end))),
+        url(florentine-pautet-1281045-unsplash.jpg);
     background-position: center;
     background-size: cover;
+/*
+    background: #00FF00FF; Add transparency to hex codes
+*/
     color: var(--text-color);
     font-family: cursive;
     font-size: var(--font-size);
@@ -25,6 +43,8 @@ body {
 .inputs {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .input-element {
@@ -35,11 +55,11 @@ body {
 p {
     margin: 5px;
 }
-
+    
 input {
     padding-top: 5px;
 }
 
-input[name='color'] {
+input[type='color'] {
     margin-top: 5px;
 }
